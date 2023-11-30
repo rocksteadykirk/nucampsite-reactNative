@@ -266,6 +266,17 @@ export default Main;
 
 
 /*
+Redux updates: adding dispatch and useffect:
+dispatch and the useEffect hook are used in the Main component to fetch data asynchronously 
+using actions like fetchCampsites, fetchPromotions, fetchPartners, and fetchComments. 
+These dispatched actions trigger updates to the Redux store, making the fetched data available 
+globally within the application. By dispatching these actions in the useEffect hook,
+the data is loaded when the Main component mounts, ensuring that the application has access to the
+updated store, and subsequently, the fetched data. This pattern facilitates centralized state
+management, allowing components across the application to access and use the fetched data.
+
+
+
 
 What is createStackNavigator()?
 - createStackNavigator() is a function from React Navigation that creates a stack navigator for managing navigation in a React Native app.
